@@ -1,7 +1,7 @@
 'use strict';
 const _ = require('lodash');
 module.exports = {
-  async validation(schema, options) {
+  async joiValidate(schema, options) {
     const pickedCtx = {};
     const mappings = {
       query: 'request.query',

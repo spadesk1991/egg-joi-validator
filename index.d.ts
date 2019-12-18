@@ -10,7 +10,7 @@ declare module 'egg' {
     joi: typeof Joi
   }
   export interface Context {
-    validation(schema: SchemaRule, options?: ValidationOptions ): void
+    joiValidate(schema: SchemaRule, options?: ValidationOptions ): void
   }
   export interface EggAppConfig {
     joi : {
