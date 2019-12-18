@@ -1,6 +1,6 @@
 {
   "name": "egg-joi-validator",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "egg joi validator",
   "eggPlugin": {
     "name": "joi"
@@ -50,12 +50,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:spadesk1991/egg-joi-validator.git"
+    "url": "git+https://github.com/spadesk1991/egg-joi-validator.git"
   },
   "bugs": {
-    "url": "https://github.com:spadesk1991/egg-joi-validator/issues"
+    "url": "https://github.com/spadesk1991/egg-joi-validator/issues"
   },
-  "homepage": "https://github.com:spadesk1991/egg-joi-validator#readme",
+  "homepage": "https://github.com/spadesk1991/egg-joi-validator#readme",
   "author": "spadesk",
   "license": "MIT"
 }
