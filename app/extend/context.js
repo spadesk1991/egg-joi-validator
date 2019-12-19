@@ -18,7 +18,7 @@ module.exports = {
         _.extend(_.get(this, (mappings[k] || k) || {}), newCtx[k]);
       });
     } catch (error) {
-      this.throw(400, { message: error.details.map(d => ` [${d.path}:${d.message}]`).join(' ') });
+      this.throw(400, { message: error.details.map(d => ` ${d.path.join('.')} ${d.message.replace(/\"/g, '')}`).join(',') });
     }
   },
 };
