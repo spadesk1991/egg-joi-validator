@@ -1,5 +1,5 @@
-import * as Joi from 'joi'
-import { SchemaLike ,ValidationOptions } from 'joi'
+import * as Joi from '@hapi/joi'
+import { SchemaLike ,ValidationOptions } from '@hapi/joi'
 declare module 'egg' {
    interface SchemaRule {
         header?:SchemaLike,

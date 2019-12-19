@@ -1,6 +1,6 @@
 {
   "name": "egg-joi-validator",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "egg joi validator",
   "eggPlugin": {
     "name": "joi"
@@ -11,8 +11,7 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "@types/joi": "^14.3.4",
-    "joi": "^14.3.1",
+    "@hapi/joi": "^16.1.8",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
