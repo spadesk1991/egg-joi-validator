@@ -7,6 +7,7 @@ module.exports = {
       query: 'request.query',
       header: 'request.header',
       body: 'request.body',
+      params: 'params',
     };
     Object.keys(schema).forEach(k => {
       pickedCtx[k] = _.get(this, (mappings[k] || k) || {});

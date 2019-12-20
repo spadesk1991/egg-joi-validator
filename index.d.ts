@@ -5,6 +5,7 @@ declare module 'egg' {
         header?:SchemaLike,
         query?: SchemaLike,
         body?: SchemaLike,
+        params?:SchemaLike,
    }
   export interface Application {
     joi: typeof Joi
