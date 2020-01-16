@@ -1,21 +1,21 @@
 import * as Joi from 'joi'
-import { SchemaLike ,ValidationOptions } from 'joi'
+import { SchemaLike, ValidationOptions } from 'joi'
 declare module 'egg' {
-   interface SchemaRule {
-        header?:SchemaLike,
-        query?: SchemaLike,
-        body?: SchemaLike,
-        params?:SchemaLike,
-   }
+  interface SchemaRule {
+    header?: SchemaLike,
+    query?: SchemaLike,
+    body?: SchemaLike,
+    params?: SchemaLike,
+  }
   export interface Application {
     joi: typeof Joi
   }
   export interface Context {
-    joiValidate(schema: SchemaRule, options?: ValidationOptions ): void
+    joiValidate(schema: SchemaRule, options?: ValidationOptions): Promise<void>
   }
   export interface EggAppConfig {
-    joi : {
-        options: ValidationOptions,
+    joi: {
+      options: ValidationOptions,
     }
   }
 }
